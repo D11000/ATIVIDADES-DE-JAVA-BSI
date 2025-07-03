@@ -4,48 +4,38 @@
 import java.util.Scanner;
 
 public class Diogo_Rep10 {
-    public static void main(String[]args){
-        Scanner in= new Scanner(System.in);
+    public static void main(String[]args) {
+        Scanner in = new Scanner(System.in);
         System.out.println("Digite um numero");
         int N = in.nextInt();
-        System.out.println("Digite um valor");
-        int maior  ;
-        int menor  ;
 
+        int maior = Integer.MIN_VALUE;
+        int menor = Integer.MAX_VALUE;
 
-
-        for ( int i = 1 ; i <= N ; i++){
-
-
-
+        for (int i = 1; i <= N; i++) {
+            System.out.print("Digite o valor " + i + ": ");
             int vl = in.nextInt();
 
-
-
-            if (i < N){
-
-            if (vl < i ){
-
-                menor= vl;
-                maior= vl;
-                System.out.println("Maior "+maior + "Menor "+ menor );}
-
-
-
-
-            }
-            else if (vl > N) {
+            if (vl > maior) {
                 maior = vl;
-                menor= vl;
-                System.out.println("Maior "+maior + "Menor "+ menor );
             }
+
+            if (vl < menor) {
+                menor = vl;
+            }
+        }
+
+        System.out.println("Maior valor: " + maior);
+        System.out.println("Menor valor: " + menor);
+                System.out.println("Maior: " + maior + " Menor: " + menor);
+
+
+
+
+
+
 
 
         }
 
-
-
-
-
-    }
 }
