@@ -7,35 +7,37 @@
 
 import java.util.Arrays;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Diogo_Vetores_8 {
-    public static void preencher_vetor(){
-        Random rand= new Random();
-        int [] notas = new int[80];
-        int [] frequencias = new int[80];
-        int tabela ;
-
-
-
-        for (int i = 0 ;i < 80; i++){
-            int Nt = rand.nextInt(0,10);
-            notas[i]= Nt;
-
-        }
-        System.out.println(Arrays.toString(notas));
-
-
-
-    }
-
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        Random rand= new Random();
-        preencher_vetor();
+        final int TOTAL_NOTAS = 80;
+        int[] notas = new int[TOTAL_NOTAS];
+        int[] FreqAbsol = new int[11];
+        double[] FreqRelat = new double[11];
+
+        Random random = new Random();
 
 
+        for (int i = 0; i < TOTAL_NOTAS; i++) {
+            int nota = random.nextInt(11);
+            notas[i] = nota;
+            FreqAbsol[nota]++;
+        }
 
 
+        for (int i = 0; i <= 10; i++) {
+            FreqRelat[i] = ((double) FreqAbsol[i] / TOTAL_NOTAS) * 100;
+        }
+
+
+        System.out.printf("%-6s | %-18s | %-18s%n", "Nota", "Freq. Absoluta", "Freq. Relativa (%)");
+        System.out.println("-------------------------------------------------------");
+
+        for (int i = 0; i <= 10; i++) {
+            System.out.printf("%-6d | %-18d | %-18.2f%n", i, FreqAbsol[i], FreqRelat[i]);
+        }
+
+
+        System.out.println("\nNotas geradas: " + Arrays.toString(notas));
     }
 }
