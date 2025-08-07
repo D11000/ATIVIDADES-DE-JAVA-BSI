@@ -36,8 +36,8 @@ public class Diogo_Vetores_15 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Random rnd= new Random();
-        int []contas= new int[3];
-        int [] saldos= new int[3];
+        int []contas= new int[10];
+        int [] saldos= new int[10];
         int cod = 0;
         int valor =0;
         int contaV=0;
