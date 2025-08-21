@@ -1,5 +1,16 @@
 //Diogo Gabriel Gouveia Clemente
 //Exemplos de teste usados:
+//Amizade entre n0 e n1: Amizade entre n0 e n2: Amizade entre n0 e n3: Amizade entre n0 e n4: 
+//Amizade entre n1 e n0: Amizade entre n1 e n2: Amizade entre n1 e n3: Amizade entre n1 e n4: 
+//Amizade entre n2 e n0: Amizade entre n2 e n1: Amizade entre n2 e n3: Amizade entre n2 e n4: 
+//Amizade entre n3 e n0: Amizade entre n3 e n1: Amizade entre n3 e n2: Amizade entre n3 e n4: 
+//Amizade entre n4 e n0: Amizade entre n4 e n1: Amizade entre n4 e n2: Amizade entre n4 e n3: 
+//Quantidade de amigos por pessoa:
+//Pessoa n0 possui 3 amigos.
+//Pessoa n1 possui 3 amigos.
+//Pessoa n2 possui 2 amigos.
+//Pessoa n3 possui 1 amigos.
+//Pessoa n4 possui 1 amigos.
 
 
 
@@ -62,6 +73,7 @@ public class Diogo_Matrizes_15 {
 
 
     }
+
 
 
 
